@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Programma
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button class="segment-button activated">
+        Programma
+      </ion-segment-button>
+      <ion-segment-button (click)="goToBacheca()">
+        Bacheca
+      </ion-segment-button>
+      <ion-segment-button (click)="goToInvitati()">
+        Invitati
+      </ion-segment-button>
+      <ion-segment-button (click)="goToEventi()">
+        Eventi
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id=" page4 ">
+  <ion-card id="programma-card23 " class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="programma-list-item7" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" (click)='goToMappaPage()' item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-list id="programma-list2" class="programma-list">
+    <ion-item color="none" id="programma-list-item11" class="programma-list-item">
+      <div class="programma-list-ora"><span>04.09.18</span>14.00<br>14.30</div>
+      <div class="programma-list-text-container">
+        Sales Update
+        <span>G. Iuppariello</span>
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item12" class="programma-list-item">
+      <div class="programma-list-ora"><span>04.09.18</span>17.00<br>18.00</div>
+      <div class="programma-list-text-container ">
+        Strategy
+        <span>G. Iuppariello</span>
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item13" class="programma-list-item ">
+      <div class="programma-list-ora"><span>06.09.18</span>09.30<br>10.30</div>
+      <div class="programma-list-text-container">
+        Rising and falling stars in ICU
+        <span>Medical department</span>
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item13" class="programma-list-item">
+      <div class="programma-list-ora"><span>06.09.18</span>11.00<br>12.30</div>
+      <div class="programma-list-text-container">
+        Farmacovigilanza e compliance update
+        <span>V. Pagliaro</span>
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item13" class="programma-list-item">
+      <div class="programma-list-ora "><span>06.09.18</span>14.00<br>16.00</div>
+      <div class="programma-list-text-container">
+        Post-Transplants: patients and physicians point of view
+        <!--<span>dott.sa Sara Arancio -  Sala nulla dui</span>-->
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item13" class="programma-list-item">
+      <div class="programma-list-ora"><span>07.09.18</span>09.30<br>10.30</div>
+      <div class="programma-list-text-container">
+        Biotest 4.0
+        <span>E. D'Aiuto</span>
+      </div>
+    </ion-item>
+    <ion-item color="none" id="programma-list-item13" class="programma-list-item">
+      <div class="programma-list-ora"><span>07.09.18</span>11.00<br>12.30</div>
+      <div class="programma-list-text-container">
+        Il cambiamento
+        <span>E. Bonetti</span>
+      </div>
+    </ion-item>
+  </ion-list>
+  <div id="programma-container6" class="programma-container-pdf">
+    <button id="programma-button11" icon-start ion-button clear color="primary" full style="border-radius:0px 0px 0px 0px; " class="programma-bottone-pdf ">
+      <ion-icon name="document"></ion-icon>&nbsp;&nbsp;Programma completo
+    </button>
+  </div>
+</ion-content>

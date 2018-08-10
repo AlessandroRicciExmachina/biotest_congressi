@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Bacheca
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button (click)="goToProgramma()">
+        Programma
+      </ion-segment-button>
+      <ion-segment-button class="segment-button activated">
+        Bacheca
+      </ion-segment-button>
+      <ion-segment-button (click)="goToInvitati()">
+        Invitati
+      </ion-segment-button>
+      <ion-segment-button (click)="goToEventi()">
+        Eventi
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id="page5">
+  <ion-card id="bacheca-card24" class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="bacheca-list-item14" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" item-right (click)='goToMappaPage()'></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <div [hidden]="!tab1">
+
+
+  </div>
+  <div [hidden]="!tab2">
+    <ion-list id="bacheca-list3" class="bacheca-list">
+      <ion-item color="none" id="bacheca-list-item15" class="bacheca-list-item">
+        <ion-avatar item-left>
+          <img src="assets/img/avatar1.png" />
+        </ion-avatar>
+        <h2>
+        Francesco Acampora
+		<span class="avatar-details">
+			<a href="mailto:francesco.acampora@biotest.com">francesco.acampora@biotest.com</a><br>
+			<a href="tel:+393462370115">+39.346.2370115</a>
+		</span>
+      </h2>
+        <span class="item-right">
+          <a href="mailto:francesco.acampora@biotest.com" ion-button icon-only clear color="danger"><ion-icon name="mail"></ion-icon></a>
+		  <a href="tel:+393462370115" ion-button icon-only clear color="danger"><ion-icon name="call"></ion-icon></a>
+      </span>
+      </ion-item>
+
+      <ion-item color="none" id="bacheca-list-item17" class="bacheca-list-item">
+        <ion-avatar item-left>
+          <img src="assets/img/avatar3.png" />
+        </ion-avatar>
+        <h2>
+        Marco Muscariello
+		<span class="avatar-details">
+			<a href="mailto:marco.muscariello@biotest.com">marco.muscariello@biotest.com</a><br>
+			<a href="tel:+393928203975">+39.392.8203975</a>
+		</span>
+      </h2>
+        <span class="item-right">
+          <a href="mailto:marco.muscariello@biotest.com" ion-button icon-only clear color="danger"><ion-icon name="mail"></ion-icon></a>
+		  <a href="tel:+393928203975" ion-button icon-only clear color="danger"><ion-icon name="call"></ion-icon></a>
+      </span>
+      </ion-item>
+
+      <ion-item color="none" id="bacheca-list-item17" class="bacheca-list-item disabled">
+        <ion-avatar item-left>
+          <img src="assets/img/avatar5.png" />
+        </ion-avatar>
+        <h2>
+        Fabio Perri
+		<span class="avatar-details">
+			<a href="mailto:fabio.perri@biotest.com">fabio.perri@biotest.com</a><br>
+			<a href="tel:+393316567962">+39.331.6567962</a>
+		</span>
+      </h2>
+        <span class="item-right">
+          <a href="mailto:fabio.perri@biotest.com" ion-button icon-only clear color="danger"><ion-icon name="mail"></ion-icon></a>
+		  <a href="tel:+393316567962" ion-button icon-only clear color="danger"><ion-icon name="call"></ion-icon></a>
+		</span>
+      </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer no-border class="footer_bacheca">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center center class="button_bacheca" [ngClass]="{'selected': !tab2}" (click)='changeTab(1)' padding>
+        Avvisi
+      </ion-col>
+      <ion-col text-center center class="button_bacheca" [ngClass]="{'selected': !tab1}" (click)='changeTab(2)' padding>
+        Staff
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <!--  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>-->
+    <ion-title>
+      Finti Ruderi del tempio italico
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='closePage()'>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+
+  <div id="evento-markdown13" class="show-list-numbers-and-dots evento-container-testo">
+    <p>
+      <strong>
+        DESCRIZIONE:
+      </strong>
+    </p>
+    <p>
+	 I finti ruderi del Tempio Italico, collocati vicino all'ingresso principale del Giardino inglese, simulano una rovina artificiale, secondo il gusto del tempo, combinando l'illusione figurativa con l'uso di elementi archeologici autentici, provenienti dagli scavi campani. L'uso di elementi autentici combinati con fabbriche che simulano resti archeologici, come le statue antiche della collezione Farnese, collocate all'interno della rovina artificiale del Criptoportico o i bassorilievi provenienti da Ercolano e Pompei inseriti nei falsi ruderi del Tempio Italico, costituisce una peculiarità del Giardino inglese di Caserta, che in questa ottica riveste un interesse specifico nell'evoluzione dei Paesaggi con rovine.
+    </p>
+  </div>
+
+  <ion-slides pager>
+
+    <ion-slide>
+      <img src="assets/img/Ruderi_tempio_italico.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/Ruderi_tempio_italico_2.jpg" />
+    </ion-slide>
+
+  </ion-slides>
+
+
+  <ion-fab left bottom>
+    <button ion-fab color="danger"><ion-icon name="star"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" class="color-white"></ion-icon>
+			<ion-icon name="star" class="color-white"></ion-icon>
+		</button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

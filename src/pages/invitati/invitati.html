@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Invitati
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"> </ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button (click)='goToProgramma()'>
+        Programma
+      </ion-segment-button>
+      <ion-segment-button (click)='goToBacheca()'>
+        Bacheca
+      </ion-segment-button>
+      <ion-segment-button class="segment-button activated">
+        Invitati
+      </ion-segment-button>
+      <ion-segment-button (click)="goToEventi()">
+        Eventi
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id="page5">
+  <ion-card id="bacheca-card24" class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="bacheca-list-item14" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" item-right (click)='goToMappa()'></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-list id="bacheca-list3" class="bacheca-list">
+    <ion-item color="none" on-click="goToStaff()" id="bacheca-list-item15" class="bacheca-list-item">
+      <ion-avatar item-left>
+        <img src="assets/img/avatar4.png" />
+      </ion-avatar>
+      <h2>
+        Maria Rossi
+      </h2>
+    </ion-item>
+    <ion-item color="none" on-click="goToStaff()" id="bacheca-list-item16" class="bacheca-list-item">
+      <ion-avatar item-left>
+        <img src="assets/img/avatar5.png" />
+      </ion-avatar>
+      <h2>
+        Giuseppe Marrone
+      </h2>
+    </ion-item>
+    <ion-item color="none" on-click="goToStaff()" id="bacheca-list-item17" class="bacheca-list-item disbled">
+      <ion-avatar item-left>
+        <img src="assets/img/avatar6.png" />
+      </ion-avatar>
+      <h2>
+        Anna bianchi
+      </h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-staff',
+  templateUrl: 'staff.html'
+})
+export class StaffPage {
+
+  constructor(public navCtrl: NavController) {
+    console.log("StaffPage");
+  }
+  closePage() {
+
+    this.navCtrl.pop();
+
+  }
+}

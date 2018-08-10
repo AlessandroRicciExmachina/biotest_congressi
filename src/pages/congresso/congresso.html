@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Congresso
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding id="page3">
+  <ion-card id="congresso-card22" class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="congresso-list-item24" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" item-right (click)='goToMappaPage()'></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <div id="congresso-markdown7" class="show-list-numbers-and-dots congresso-abstract" (click)='showHide($event,"auto");' [style.height]="this.boxState">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien ut tortor lobortis rhoncus ultricies at erat. Pellentesque vitae egestas lectus. Nunc efficitur, velit at ultrices tempus, tellus lorem blandit diam, vel consectetur tellus nulla
+      at justo. Nam eu pretium ipsum. Aliquam congue tellus sapien, non venenatis dolor blandit in. Mauris sit amet lorem sapien. Cras eu ipsum eleifend, maximus felis vitae, congue urna.
+    </p>
+    <div class="container-sfondo-velina ">
+      <img src="assets/img/bckVelina.png" class="sfondoVelina">
+    </div>
+  </div>
+  <div id="congresso-container1 " class="congresso-container-main-button " (click)='showHide($event,"60px ");'>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 text-center>
+          <button id="congresso-button1" ion-button color="stable" block class="congresso-main-button-programma" on-click="goToProgramma()">
+				  <img src="assets/img/ico_programmi.png">
+				</button>
+        </ion-col>
+        <ion-col col-6 text-center>
+          <button id="congresso-button2 " ion-button color="stable" block class="congresso-main-button-bacheca " on-click="goToBacheca()">
+				  <img src="assets/img/ico_bacheca.png">
+				</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6 text-center><span class="congresso-button-text">Programma</span></ion-col>
+        <ion-col col-6 text-center><span class="congresso-button-text">Bacheca</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6 text-center>
+          <button id="congresso-button3" ion-button color="stable" block class="congresso-main-button-invitati" on-click="goToInvitati()">
+				  <img src="assets/img/ico_avatar.png">
+				</button>
+        </ion-col>
+        <ion-col col-6 text-center>
+          <button id="congresso-button4" ion-button color="stable" block class="congresso-main-button-eventi" on-click="goToEventi()">
+				  <img src="assets/img/ico_eventi.png">
+				</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6 text-center><span class="congresso-button-text">Invitati</span></ion-col>
+        <ion-col col-6 text-center><span class="congresso-button-text">Eventi</span></ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+  </div>
+  <div id="congresso-container3" class="congresso-container-sub-button">
+    <button id="congresso-button5" ion-button color="danger" block class="congresso-sub-button-prenotazione">
+      Guida della città
+    </button>
+  </div>
+  <div id="congresso-container3" class="congresso-container-sub-button">
+    <button id="congresso-button5" ion-button color="danger" block class="congresso-sub-button-prenotazione" (click)='goToPrenotazione()'>
+      La mia prenotazione
+    </button>
+  </div>
+</ion-content>

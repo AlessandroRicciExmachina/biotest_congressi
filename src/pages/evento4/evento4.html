@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <!--  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>-->
+    <ion-title>
+      Bagno di Venere
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='closePage()'>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+
+  <div id="evento-markdown13" class="show-list-numbers-and-dots evento-container-testo">
+    <p>
+      <strong>
+        DESCRIZIONE:
+      </strong>
+    </p>
+    <p>
+      Nella maestosa Reggia di Caserta c’è un misterioso giardino all’inglese e una statua di Venere che fa il bagno. Il giardino, commissionato dalla regina Maria Carolina d’Asburgo Lorena, fu realizzato dal botanico tedesco John Andreas Graefer (1746-1801) in collaborazione con l’architetto Carlo Vanvitelli (1739-1821).
+    </p>
+  </div>
+
+  <ion-slides pager>
+
+    <ion-slide>
+      <img src="assets/img/bagno-venere-1.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/bagno-venere-2.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/bagno-venere-3.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/bagno-venere-4.jpg" />
+    </ion-slide>
+
+  </ion-slides>
+
+
+  <ion-fab left bottom>
+    <button ion-fab color="danger"><ion-icon name="star"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" color="danger"></ion-icon>
+			<ion-icon name="star" class="color-white"></ion-icon>
+			<ion-icon name="star" class="color-white"></ion-icon>
+		</button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

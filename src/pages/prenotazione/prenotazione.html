@@ -1,0 +1,61 @@
+<!--
+  Generated template for the PrenotazionePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Prenotazione</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card id="congresso-card22" class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="congresso-list-item24" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" item-right (click)='goToMappaPage()'></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+	
+	<ion-card>
+		<ion-card-header>
+			<ion-icon name="arrow-round-forward"></ion-icon> {{this.data_prenotazione.PRE_dataOraAndata}}
+		</ion-card-header>
+		<ion-card-content>
+			<ion-icon name="{{this.data_prenotazione.PRE_mezzoRitorno=='t' ? 'train' : 'plane' }}"></ion-icon><div> {{this.data_prenotazione.PRE_dettaglioAndata}} </div>
+		</ion-card-content>
+	</ion-card>
+	
+	<ion-card>
+		<ion-card-header>
+			<ion-icon name="home"></ion-icon> {{this.data_prenotazione.PRE_albergo}}
+		</ion-card-header>
+		<ion-card-content>
+			Check in: {{this.data_prenotazione.PRE_checkIn}}<br>
+			Check out: {{this.data_prenotazione.PRE_checkout}}
+		</ion-card-content>
+	</ion-card>
+	
+	<ion-card>
+		<ion-card-header>
+			<ion-icon name="arrow-round-back"></ion-icon> {{this.data_prenotazione.PRE_dataOraRitorno}}
+		</ion-card-header>
+		<ion-card-content>
+			<ion-icon name="{{this.data_prenotazione.PRE_mezzoRitorno=='t' ? 'train' : 'plane' }}"></ion-icon><div> {{this.data_prenotazione.PRE_dettaglioRitorno}} </div>
+		</ion-card-content>
+	</ion-card>
+
+
+</ion-content>

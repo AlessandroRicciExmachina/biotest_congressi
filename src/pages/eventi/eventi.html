@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Eventi
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button (click)='goToProgramma()'>
+        Programma
+      </ion-segment-button>
+      <ion-segment-button (click)='goToBacheca()'>
+        Bacheca
+      </ion-segment-button>
+      <ion-segment-button (click)='goToInvitati()'>
+        Invitati
+      </ion-segment-button>
+      <ion-segment-button class="segment-button activated">
+        Eventi
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id="page7">
+  <ion-card id="eventi-card26" class="congresso-card">
+    <ion-list>
+      <img src="assets/img/100random.png" />
+      <ion-item color="none" id="eventi-list-item23" class="congresso-card-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 / 07.09.18</div>
+        <div class="small">Caserta</div>
+        <ion-note item-right></ion-note>
+        <ion-icon name="pin" item-right (click)='goToMappa()'></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-list id="eventi-list5" class="eventi-list">
+
+    <ion-item color="none" (click)="goToEvento()" id="eventi-list-item25" class="eventi-list-item">
+      <div class="eventi-list-ora"><span>04.09.18</span>20.30</div>
+      <div class="eventi-list-text-container">
+        Antica Hostaria Massa
+      </div>
+    </ion-item>
+    <ion-item color="none" (click)="goToEvento2()" id="eventi-list-item26" class="eventi-list-item">
+      <div class="eventi-list-ora"><span>05.09.18</span>19.30</div>
+      <div class="eventi-list-text-container">
+        Pizzeria Masanielli
+      </div>
+    </ion-item>
+    <ion-item color="none" (click)="goToEvento3()" id="eventi-list-item27" class="eventi-list-item">
+      <div class="eventi-list-ora"><span>06.09.18</span>20.30</div>
+      <div class="eventi-list-text-container">
+        Ristorante Le colonne
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

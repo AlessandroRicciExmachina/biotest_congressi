@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Congressi
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='goToNotifichePage()'>
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page1">
+  <form id="congressi-form1" class="congressi-form">
+    <ion-item id="congressi-select1" class="congressi-select-tutti-inviti">
+      <ion-label>
+        tutti / i miei inviti
+      </ion-label>
+      <ion-select name="congressiSelectTuttiInviti">
+        <ion-option>
+          tutti i congressi
+        </ion-option>
+        <ion-option>
+          solo i miei inviti
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="congressi-select2" class="congressi-select-citta">
+      <ion-label>
+        città
+      </ion-label>
+      <ion-select name="congressiSelectCitta">
+        <ion-option>
+          Caserta
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <ion-card id="congressi-card21" class="congressi-card-congresso">
+    <ion-list>
+      <img src="assets/img/130random.png" />
+      <ion-item color="none" on-click="goToCongresso()" id="congressi-list-item20" class="congressi-card-congresso-list">
+        <div>Royal Meeting</div>
+        <div class="small">04.09.18 - Caserta</div>
+        <ion-note item-right></ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

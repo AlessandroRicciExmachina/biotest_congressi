@@ -1,0 +1,41 @@
+<ion-header [hidden]="dont_present_login">
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page9" [hidden]="dont_present_login">
+
+  <div id="login-background"><img src="assets/imgs/background.jpg" class="logo-app" /></div>
+
+  <div id="login-content">
+
+    <img src="assets/img/logo-app.png" class="logo-app" />
+
+    <form id="login-form4">
+      <ion-list id="login-list6">
+        <ion-item id="login-input4">
+          <ion-label>
+            Email
+          </ion-label>
+          <ion-input type="email" placeholder="" [(ngModel)]='loginForm.email' name='email'></ion-input>
+        </ion-item>
+        <ion-item id="login-input5">
+          <ion-label>
+            Password
+          </ion-label>
+          <ion-input type="password" placeholder="" [(ngModel)]='loginForm.password' name='password'></ion-input>
+        </ion-item>
+      </ion-list>
+      <div class="spacer" style="height:40px;" id="login-spacer1"></div>
+      <button id="login-button6" ion-button color="danger" block (click)="login()">
+		  Login
+		</button>
+    </form>
+
+    <img src="assets/img/logo-biotest.png" class="logo-biotest" />
+
+  </div>
+
+</ion-content>

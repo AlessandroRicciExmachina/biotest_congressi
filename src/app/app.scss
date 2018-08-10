@@ -1,0 +1,112 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//.toolbar-title { display: none; }
+
+page-login #login-background { position: absolute; top: 0; left: 0; width: 100%; }
+page-login #login-content { position: absolute; top: 0; left: 0; width: 100%; padding: 20px; }
+page-login form { background-color: #fff; padding: 10px; }
+page-login .logo-app { margin: 0 auto 10px auto; }
+page-login .logo-biotest { display: block; width: 50%; max-width: 180px; margin: 50px auto 0 auto; }
+
+
+page-congressi .congressi-card-congresso { display: block; position: relative;}
+page-congressi .congressi-card-congresso .congressi-card-congresso-list { display: block; position: absolute; margin-top: -50%; background-color: transparent; color: #fff; text-align: center; font-size: 24px;}
+page-congressi .congressi-card-congresso .congressi-card-congresso-list ion-label div { background-color: rgba(0,0,0,0.6); margin: 5px 0 5px 7px; padding: 10px; font-variant: small-caps;}
+page-congressi .congressi-card-congresso .congressi-card-congresso-list ion-label div.small { font-size: 16px; font-variant: normal;}
+
+
+.congresso-card { margin: -17px -20px 20px -20px; border-radius: 0px; width: calc(100% + 40px); }
+.congresso-card img { max-height: 130px; }
+.congresso-card .congresso-card-list { display: block; position: absolute; top: 0px; background-color: transparent; color: #fff; font-size: 18px;}
+.congresso-card .congresso-card-list ion-label div { background-color: rgba(0,0,0,0.6); margin: 2px 0 2px 0; padding: 5px 10px; font-variant: small-caps;}
+.congresso-card .congresso-card-list ion-label div.small { font-size: 14px; font-variant: normal;}
+.congresso-card ion-icon { background-color: #c30b10; border-radius: 50%; padding: 16px; width: 60px; height: 60px; text-align:center;}
+
+.congresso-container-main-button { margin: 0 auto; }
+.congresso-container-main-button button { display: block; margin: 20px auto 0 auto; overflow: hidden; width: 70px; height: 70px; border-radius: 35px; background-color: #e3e7e8; color: #6d6d6d; box-shadow: none; }
+.congresso-container-main-button button span.button-inner {  }
+.congresso-container-main-button .congresso-button-text { color: #c30b10; text-transform: uppercase; font-size: 16px; font-weight: 500; }
+
+
+page-congresso .congresso-abstract { display: block; position: relative; margin: 10px -20px 0 -20px; padding: 0 20px 20px 20px; width: calc(100% + 40px); overflow: hidden; height: 60px; border-bottom: 1px solid #dedede;}
+page-congresso .container-sfondo-velina { position: absolute; bottom: 0; left: 0; width: 100%;  height: 50px; }
+page-congresso .container-sfondo-velina .sfondoVelina { width: 100%; height: 50px; }
+
+page-congresso .congresso-sub-button-prenotazione { margin: 20px auto; }
+
+page-staff ion-content { background-color: #f0f0f1 !important;}
+page-staff .staff-chat-left { display: block; background-color: #ffffff; width: calc(100% - 70px); border: 1px solid #ced6d8; border-radius: 2px; margin-bottom: 10px; padding: 5px 15px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+page-staff .staff-chat-right { display: block; background-color: #dedede; width: calc(100% - 70px); margin-left: 70px; border: 1px solid #ced6d8;  border-radius: 2px; margin-bottom: 10px; padding: 5px 15px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+page-staff .staff-container-scrivi { display: block; position: fixed; bottom: 0; right: 0; width: 100%; background-color: #fff; border-top: 1px solid #e1e2e4; }
+page-staff .staff-container-scrivi .staff-msasggio-input { margin: 0; padding: 0; width: calc(100% - 50px); }
+page-staff .staff-container-scrivi button { display: block; position: absolute; bottom: 3px; right: 7px; height: 2.5em !important; }
+
+page-staff ion-fab[bottom] { bottom: 55px; }
+
+page-staff .toolbar-title { padding: 0; }
+page-staff .toolbar-title img { width: 30px; }
+
+.programma-container-pdf { display: block; position: fixed; bottom: 0; right: 0; width: 100%; background-color: #f7f7f7; border-top: 1px solid #e1e2e4; transform: translate3d(0,0,0) !important; z-index: 102 !important; }
+.programma-bottone-pdf { color: #c30b10; }
+
+page-programma .programma-list .programma-list-item { padding: 0; font-color: #5c5c5c; }
+page-programma .programma-list .programma-list-text-container { display: inline-block; margin-left: 10px; white-space: normal; width: calc(100% - 87px);}
+page-programma .programma-list .programma-list-text-container span  { display: block; font-size: 12px; margin-top: 10px; }
+page-programma .programma-list .programma-list-item .programma-list-ora { display: inline-block; width: 80px; height: 80px; background-color: #f7f7f7; color: #c30b10; padding: 13px 15px 15px 15px; text-align: right; font-size: 16px; }
+page-programma .programma-list .programma-list-item .programma-list-ora  span { display: block; font-size: 12px; margin-bottom: 1px;}
+
+page-eventi .eventi-list .eventi-list-item { padding: 0; font-color: #5c5c5c; }
+page-eventi .eventi-list .eventi-list-text-container { display: inline-block; margin-left: 10px; white-space: normal; }
+page-eventi .eventi-list .eventi-list-text-container span  { display: block; font-size: 12px; margin-top: 10px; }
+page-eventi .eventi-list .eventi-list-item .eventi-list-ora { display: inline-block; width: 80px; height: 80px; background-color: #f7f7f7; color: #c30b10; padding: 20px 15px; text-align: right; font-size: 16px; }
+page-eventi .eventi-list .eventi-list-item .eventi-list-ora span { display: block; font-size: 12px; margin-bottom: 5px;}
+
+/*page-evento*/ .evento-container-dettagli { margin: -25px -20px 20px -20px; border-radius: 0px; width: calc(100% + 40px); background-color: #eff7fa; padding: 20px; }
+/*page-evento*/ .evento-container-testo strong { color: #c40b11; }
+/*page-evento*/ ion-fab-list button.fab { width: 140px; border-radius: 20px;  }
+/*page-evento*/ ion-fab-list button.fab .color-white { color: #fff; }
+
+
+
+page-bacheca .bacheca-list .bacheca-list-item { padding: 0; }
+page-bacheca .bacheca-list .bacheca-list-item.disabled { opacity: 0.4; }
+page-bacheca .bacheca-list .bacheca-list-item h2 { display: inline-block; }
+page-bacheca .bacheca-list .bacheca-list-item span.avatar-details { display: block; font-size: 12px; line-height: 16px; }
+page-bacheca .bacheca-list .bacheca-list-item .item-inner { padding-right: 0; }
+page-bacheca .bacheca-list .bacheca-list-item span.item-right { display: inline-block; font-size: 12px; line-height: 16px; float: right; }
+page-bacheca .bacheca-list .bacheca-list-item span.item-right button { padding: 4px; }
+
+page-invitati .bacheca-list .bacheca-list-item { padding: 0; }
+
+.footer_bacheca{ background-color: #F7F7F7;border-top: 1px solid #E7E7E7;}
+.button_bacheca{ height: 50px; padding-top: 10px; color:#999999; font-size: 16px;}
+.button_bacheca.selected { color:#01A7E9; }
+.mapsElement{ height: calc(100vh - 100px); }
+
+
+ion-segment { background-color:  #c40b11; position: relative !important; }
+ion-segment-button { color: #fff !important; border-color: #fff !important; }
+ion-segment-button.activated { border-color: #fff !important; }
+ion-slides { height: auto !important; }
+.swiper-pagination-bullet-active { background: #c40b11; }
+.button_bacheca.selected { color: #c40b11; }
+.version-control{ position:absolute;left:20px;bottom:20px;}
+/*ion-segment-button.segment-ios.activated { background-color: #fff !important; color: #c40b11 !important; }*/
+
+page-prenotazione ion-card ion-card-content ion-icon { display: inline-block; width: 40px; height: auto; font-size: 2.5em; color: #c30b10; }
+page-prenotazione ion-card ion-card-content div { display: inline-block; width: calc(100% - 40px);}
